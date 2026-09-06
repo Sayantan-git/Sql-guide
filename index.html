@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="A portable SQL preparation studio: learning paths, comparisons, interview practice, revision, and a real local SQL playground.">
+    <title>SQL Field Guide | Preparation Studio</title>
+    <!-- STYLES -->
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="topbar">
+        <button class="icon-button mobile-nav" id="menu-button" aria-label="Open navigation" aria-expanded="false" title="Navigation"><i data-lucide="menu"></i></button>
+        <a class="brand" href="#/roadmap"><span class="brand-symbol"><i data-lucide="database"></i></span><span><strong>SQL</strong><span class="brand-separator">/</span>Field Guide</span></a>
+        <span class="edition">PREPARATION STUDIO</span>
+        <div class="topbar-actions"><span class="dialect">SQL SERVER + CORE SQL</span><button class="icon-button" id="search-button" aria-label="Search all topics" title="Search all topics"><i data-lucide="search"></i></button><button class="icon-button" id="export-button" aria-label="Export study progress" title="Export study progress"><i data-lucide="download"></i></button><button class="icon-button" id="import-button" aria-label="Import study progress" title="Import study progress"><i data-lucide="upload"></i></button></div>
+    </header>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar"><div class="nav-label">YOUR WORKSPACE</div><nav id="navigation" aria-label="Study views"></nav><div class="progress-block"><div><span>LEARNING PROGRESS</span><strong id="progress-count"></strong></div><progress id="course-progress" max="100" value="0"></progress><p id="save-status">Saved on this device</p></div><div class="nav-label module-label">CURRICULUM</div><nav id="module-navigation" aria-label="Learning modules"></nav><a class="sources-link" href="#/sources"><i data-lucide="book-open-check"></i>Scope &amp; references</a></aside>
+        <button class="scrim" id="nav-scrim" aria-label="Close navigation" hidden></button>
+        <main id="main" tabindex="-1"></main>
+    </div>
+    <dialog id="lesson-dialog" class="lesson-dialog" aria-labelledby="lesson-title"><div id="lesson-content"></div></dialog>
+    <dialog id="search-dialog" class="search-dialog" aria-label="Search SQL concepts"><div class="search-heading"><i data-lucide="search"></i><input id="search-input" type="search" autocomplete="off" placeholder="Search joins, keys, window functions..." aria-label="Search SQL concepts"><button class="icon-button" data-close="search-dialog" aria-label="Close search"><i data-lucide="x"></i></button></div><div id="search-results"></div><div id="search-status" class="search-status" role="status"></div></dialog>
+    <dialog id="confirm-dialog" class="confirm-dialog" aria-labelledby="confirm-title"><h2 id="confirm-title">Reset study progress?</h2><p>This removes bookmarks, notes, review history, and interview results in this browser. It does not change your exported files.</p><div class="button-row"><button class="button secondary" data-close="confirm-dialog">Keep progress</button><button class="button danger" id="confirm-reset">Reset progress</button></div></dialog>
+    <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+    <div class="toast" id="toast" role="status" hidden></div>
+    <input id="import-file" type="file" accept="application/json,.json" hidden>
+    <!-- BUNDLE -->
+</body>
+</html>

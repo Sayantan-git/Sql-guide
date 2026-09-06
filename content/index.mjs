@@ -1,0 +1,14 @@
+import { modules, validateCurriculum } from './model.mjs';
+import { foundations } from './foundations.mjs';
+import { design } from './design.mjs';
+import { queries } from './queries.mjs';
+import { joins } from './joins.mjs';
+import { analytics } from './analytics.mjs';
+import { reuse } from './reuse.mjs';
+import { changes } from './changes.mjs';
+import { transactions } from './transactions.mjs';
+import { advanced } from './advanced.mjs';
+import { patterns } from './patterns.mjs';
+export const concepts = [...foundations, ...design, ...queries, ...joins, ...analytics, ...reuse, ...changes, ...transactions, ...advanced, ...patterns];
+export { modules };
+validateCurriculum(concepts);
